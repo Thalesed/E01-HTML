@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Formulario</title>
+    </head>
+
+    <body>
+
+        <h2>Formulário de Cadastro</h2>
+
+        <form>
+            <fieldset style="width: 35%;">
+                <legend>Dados Pessoais</legend>
+                
+                <div>
+                    <label for="codigo">Código:</label>
+                    <input type="text" id="codigo" placeholder="001" disabled="1" style="width: 20%;">
+                </div>
+                
+                <div>
+                    <label for="nome">Nome:</label>
+                    <input type="text" id="nome" style="width: 50%;">
+                </div>
+
+                <div>
+                    <label for="senha">Senha:</label>
+                    <input type="password" id="senha" style="width: 15%;">
+                </div>
+
+                <div>
+                    <label for="sexo">Sexo:</label>
+                    <input type="radio" id="quero" name="sexo"><label for="quero">Quero</label></input>
+                    <input type="radio" id="masculino" name="sexo"><label for="masculino">Masculino</label></input>
+                    <input type="radio" id="feminino" name="sexo"><label for="feminino">Feminino</label></input>
+                    <input type="radio" id="outro" name="sexo"><label for="outro">Outro</label></input>
+                </div>
+
+                <div>
+                    <label for="idade">Idade:</label>
+                    <input type="number" id="idade" style="width: 10%;" min="1" value="1">
+                </div>
+
+                <div>
+                    <label for="cartao_credito">Cartão de Crédito:</label> 
+                    <div>
+                        <select id="cartao_credito" multiple="multiple">
+                            <option value="mastercard">MasterCard</option>
+                            <option value="visa">Visa</option>
+                            <option value="american_express">American Express</option>
+                            <option value="credicard_platinium">Credicard Platinum</option>
+                            <option value="banco_original_internacional">Banco Original Internacional</option>
+                            <option value="chave_pix">Chave PIX</option>
+                        </select>
+                    </div>
+                </div>
+            </fieldset>
+
+            <fieldset style="width: 35%;">
+                <legend>Dados Profissionais</legend>
+                
+                <div>
+                <label for="cargo">Cargo:</label>
+                <select id="cargo" size="1">
+                    <option value="analistajunior">Analista Júnior</option>
+                    <option value="analistapleno">Analista Pleno</option>
+                    <option value="analistasenior">Analista Sênior</option>
+                    <option value="ceo">CEO</option>
+                    <option value="jemaf">Jemaf</option>
+                    <option value="alexfabiani">Alex Fabiani</option>
+                </select> 
+                </div>
+                
+                <div>
+                    <label for="dadospessoais">Dados Pessoais:</label>
+                    <div>
+                        <input type="checkbox" id="fumante" name="dadospessoais"><label for="fumante"> Fumante</label></input>
+                    </div>
+
+                    <div>
+                        <input type="checkbox" id="exercicios" name="dadospessoais"><label for="exercicios"> Pratica Exercícios Físicos</label></input>
+                    </div>
+
+                    <div>
+                        <input type="checkbox" id="bebida" name="dadospessoais"><label for="bebida"> Consome Bebida Álcoólica</label></input>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="deficiencia" name="dadospessoais"><label for="deficiencia">Deficiente Fisico</label></input>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="parkinson" name="dadospessoais"><label for="parkinson">Parkinson</label></input>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="alzheimer" name="dadospessoais"><label for="alzheimer">Alzheimer</label></input>
+                    </div>
+                </div>
+
+                <div>
+                    <label for="experienciasprofissionais">Experiências Profissionais:</label>
+                    <div>
+                        <textarea id="experiencia_profissional" cols="50" rows="3" placeholder="Data inicio/Data fim/Empresa/Cargo"></textarea>
+                    </div>
+                </div>
+                </fieldset>
+        
+            <div>
+                <input type="reset"id="reset">
+                <input type="submit" id="submit" onclick="alert('Formulário Enviado')">
+            </div>
+
+        </form>        
+    </body>
+</html>
